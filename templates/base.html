@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Tailwind-css CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    {% block css %}
+    <style>
+        .nav1 {
+            position: fixed;
+        }
+
+        .fa {
+            padding: 12px;
+            font-size: 30px;
+            width: 60px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 5px;
+            border-radius: 50%;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+            color: #0d6efd;
+            ;
+        }
+
+        .fa-facebook {
+            background: rgb(39 39 39);
+            color: white;
+        }
+
+        .fa-twitter {
+            background: rgb(39 39 39);
+            color: white;
+        }
+
+        .fa-instagram {
+            background: rgb(39 39 39);
+            color: white;
+        }
+
+        .footer .contain .col-social {
+            font-size: 30px;
+        }
+
+        #social-media {
+            margin: -39px 0px 0px 0px;
+            padding: 81px 0px 0px 64%;
+        }
+    </style>
+    {% endblock %}
+</head>
+
+<body>
+
+
+    <!-- Tailwind-CSS Navbar Start  -->
+    <header class="nav1">
+        <nav class="bg-gray-900 shadow-xl">
+            <div class="container mx-auto">
+                <div class="sm:flex justify-around">
+                    <!-- Site-title  -->
+                    <a href="/" class="text-white text-3xl font-bold p-3">TSF</a>
+                    <!-- Menus  -->
+                    <ul class="text-gray-100 sm:self-center text-xl border-t sm:border-none">
+                        <li class="sm:inline-block">
+                            <a href="/" class="p-3 hover:text-blue-500">Home</a>
+                        </li>
+                        <!-- <li class="sm:inline-block">
+                            <a href="#" class="p-3 hover:text-blue-500">Our Misson</a>
+                        </li> -->
+                        <li class="sm:inline-block">
+                            <a href="/about" class="p-3 hover:text-blue-500">About Us</a>
+                        </li>
+                        <li class="sm:inline-block">
+                            <a href="/contact" class="p-3 hover:text-blue-500">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Tailwind-CSS Navbar Ends  -->
+
+
+
+    {% block body %}
+
+    {% endblock %}
+
+    <footer>
+        <div class="container1">
+            <h2 style="text-align: center;">
+                We Are On A Mission To Help <br />
+                The needy!
+            </h2><br>
+            <a href="/" class="text-white text-3xl font-bold p-3">TSF</a><br>
+            <em style="font-size: small;">Follow us on social media</em><br>
+            <div class="col-social">
+                <ul id="social-media">
+                    <a href="https://www.instagram.com" style="width: 60px;" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com" style="width: 60px;" class="fa fa-twitter"></a>
+                    <a href="https://www.facebook.com" style="width: 60px;" class="fa fa-facebook"></a>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

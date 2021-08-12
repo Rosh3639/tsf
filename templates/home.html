@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<style>
+    .header1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .para {
+        background-image: url('https://images.unsplash.com/photo-1462536943532-57a629f6cc60?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 1000px;
+    }
+
+    .container1 {
+        height: 300px;
+        background-color: #212529;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+
+    }
+
+    .header2 {
+        color: white;
+        margin-top: 440px;
+        font-weight: 900;
+        text-shadow: 4px 0px black;
+    }
+
+    .msg {
+        text-align: center;
+        line-height: 80px;
+        font-size: xx-large;
+        text-transform: uppercase;
+    }
+
+    .msg button {
+        border: none;
+    }
+
+    .msg button:hover {
+        background-color: rgb(61, 61, 65);
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+
+<div class="para">
+    <h1 class="header1">
+        <marquee behavior="sliding" direction="" scrollamount='13'>Be the part of our community!
+        </marquee>
+    </h1>
+    <div class="msg">
+        <h1 class="header2">
+            Donate for a good cause!
+        </h1>
+        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HkHEVKFnTcYsjU" async> </script> </form>
+    </div>
+
+</div>
+
+{% endblock %}
